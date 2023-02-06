@@ -6,6 +6,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
+    fontFamily: {
+      'kaushan': ['Kaushan Script', ]
+    },
     extend: {},
   },
   plugins: [],

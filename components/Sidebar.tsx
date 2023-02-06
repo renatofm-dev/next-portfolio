@@ -14,7 +14,7 @@ export const Sidebar = () => {
       // height={50}
       />
 
-      <h3>
+      <h3 className="my-4 text-3xl font-medium">
         <span>Renato </span>
          Martins
       </h3>
@@ -28,30 +28,30 @@ export const Sidebar = () => {
         Download Resume
       </a>
       {/* Social icons */}
-      <div>
+      <div className="flex justify-around my-5 text-green-500 w-9/12 md:w-full mx-auto">
         <a href="">
-          <AiFillLinkedin className="w-8 h-8" />
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="">
-          <AiFillInstagram className="w-8 h-8" />
+          <AiFillInstagram className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="">
-          <AiFillGithub className="w-8 h-8" />
+          <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
       {/* address */}
-
-      <div>
-        <div>
+      <div className="my-5 py-4 bg-gray-200 rounded-lg" 
+        style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
+        <div className="flex items-center justify-center space-x-2">
           <GoLocation />
-          <span>Brasilia, Brazil</span>
+          <span>Brasília, Brazil</span>
         </div>
-        <p>renatofm6694@gmail.com</p>
-        <p>+55 (61) 98224-8071</p>
+        <p className="my-2" >renatofm6694@gmail.com</p>
+        <p className="my-2">+55 (61) 98224-8071</p>
       </div>
       {/* Email button */}
-      <button>Email</button>
-      <button>Toogle Theme</button>
+      <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">Email</button>
+      <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">Toogle Theme</button>
     </div>
 
 
