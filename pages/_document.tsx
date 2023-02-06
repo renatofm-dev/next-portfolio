@@ -9,7 +9,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
 
       </Head>
-      <body>
+      <body className='bg-gradient-to-r from-green to-blue-400'>
         <Main />
         <NextScript />
       </body>

@@ -14,8 +14,8 @@ export const Sidebar = () => {
       // height={50}
       />
 
-      <h3 className="my-4 text-3xl font-medium">
-        <span>Renato </span>
+      <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
+        <span className="text-green">Renato </span>
          Martins
       </h3>
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">Web Developer</p>
@@ -28,7 +28,7 @@ export const Sidebar = () => {
         Download Resume
       </a>
       {/* Social icons */}
-      <div className="flex justify-around my-5 text-green-500 w-9/12 md:w-full mx-auto">
+      <div className="flex justify-around my-5 text-green w-9/12 md:w-full mx-auto">
         <a href="">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
@@ -50,8 +50,14 @@ export const Sidebar = () => {
         <p className="my-2">+55 (61) 98224-8071</p>
       </div>
       {/* Email button */}
-      <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">Email</button>
-      <button className="bg-gradient-to-r from-green-400 to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">Toogle Theme</button>
+      <button className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none"
+        onClick={() => window.open('mailto: renatofm6694@gmail.com')}
+      >
+        Email
+      </button>
+      <button className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">
+        Toogle Theme
+      </button>
     </div>
 
 
