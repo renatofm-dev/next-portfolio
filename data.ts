@@ -1,9 +1,10 @@
-import { IService } from "./types"
+import { IService, ISkill } from "./types";
 
-import { RiComputerLine } from "react-icons/ri"
-import { FaServer } from "react-icons/fa"
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai"
-import { MdDeveloperMode } from "react-icons/md"
+import { RiComputerLine } from "react-icons/ri";
+import { FaServer } from "react-icons/fa";
+import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { MdDeveloperMode } from "react-icons/md";
+import { BsCircleFill } from "react-icons/bs";
 
 export const services: IService[] = [
   {
@@ -36,6 +37,42 @@ export const services: IService[] = [
     about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
     Icon: RiComputerLine
   },
-
-
 ]
+
+export const lenguages:ISkill[] = [
+  {
+    name: 'Python',
+    level: '50%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'Javascript',
+    level: '70%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'React Native',
+    level: '60%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'React',
+    level: '80%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'Vue',
+    level: '40%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'Bootstrap',
+    level: '50%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'MatLab',
+    level: '20%',
+    Icon: BsCircleFill
+  },
+];
