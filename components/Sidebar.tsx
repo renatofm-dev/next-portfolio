@@ -1,15 +1,23 @@
 
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import { GiTie } from "react-icons/gi"
+import { GiTie } from "react-icons/gi";
+import { useTheme } from "next-themes";
 
 export const Sidebar = () => {
+
+  const {theme, setTheme} = useTheme();
+
+  const changeTheme= ()=> {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
+
   return (
     <div>
       <img
         src="https://github.com/rmartins94.png"
         alt="user avatar"
-        className="w-32 h-32 rounded-full mx-auto"
+        className="w-32 h-32 mx-auto rounded-full"
       // width={50}
       // height={50}
       />
@@ -18,17 +26,17 @@ export const Sidebar = () => {
         <span className="text-green">Renato </span>
          Martins
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">Web Developer</p>
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
       <a
         href=""
-        className="px-2 py-1 my-3 bg-gray-200 rounded-full flex items-center justify-center"
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
         download='name'
       >
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
       {/* Social icons */}
-      <div className="flex justify-around my-5 text-green w-9/12 md:w-full mx-auto">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <a href="">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
@@ -40,7 +48,7 @@ export const Sidebar = () => {
         </a>
       </div>
       {/* address */}
-      <div className="my-5 py-4 bg-gray-200 rounded-lg" 
+      <div className="py-4 my-5 bg-gray-200 dark:bg-dark-200" 
         style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
         <div className="flex items-center justify-center space-x-2">
           <GoLocation />
@@ -50,13 +58,15 @@ export const Sidebar = () => {
         <p className="my-2">+55 (61) 98224-8071</p>
       </div>
       {/* Email button */}
-      <button className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none"
+      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
         onClick={() => window.open('mailto: renatofm6694@gmail.com')}
       >
         Email
       </button>
-      <button className="bg-gradient-to-r from-green to-blue-400 w-8/12 rounded-full py-2 px-5 text-white my-2">
-        Toogle Theme
+      <button 
+        onClick={changeTheme}
+        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400">
+        Theme
       </button>
     </div>
 
