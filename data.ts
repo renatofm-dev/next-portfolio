@@ -39,7 +39,7 @@ export const services: IService[] = [
   },
 ]
 
-export const lenguages:ISkill[] = [
+export const languages:ISkill[] = [
   {
     name: 'Python',
     level: '50%',
