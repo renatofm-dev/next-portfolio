@@ -37,7 +37,7 @@ export const services: IService[] = [
     about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
     Icon: RiComputerLine
   },
-]
+];
 
 export const languages:ISkill[] = [
   {
