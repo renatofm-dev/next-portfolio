@@ -11,3 +11,13 @@ export interface ISkill {
   level: string,
   Icon: IconType
 }
+
+export interface IProject {
+  name: string,
+  description: string,
+  image_path: string,
+  deploy_url: string,
+  github_url: string,
+  category: string[],
+  key_techs: string[],
+}
