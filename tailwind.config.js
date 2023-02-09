@@ -8,7 +8,9 @@ module.exports = {
   theme: {
 
     fontFamily: {
-      'kaushan': ['Kaushan Script', ]
+      'kaushan': ['Kaushan Script', ],
+      'Comfort': ['Comfortaa'],
+      'Tenor': ['Tenor Sans']
     },
     extend: {
       colors: {

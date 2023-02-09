@@ -72,7 +72,7 @@ export const languages:ISkill[] = [
   },
   {
     name: 'MatLab',
-    level: '20%',
+    level: '40%',
     Icon: BsCircleFill
   },
 ];
