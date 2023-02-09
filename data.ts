@@ -76,3 +76,26 @@ export const lenguages:ISkill[] = [
     Icon: BsCircleFill
   },
 ];
+
+export const tools:ISkill[] = [
+  {
+    name: 'Excel',
+    level: '60%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'Google Analytics',
+    level: '80%',
+    Icon: BsCircleFill
+  },
+  {
+    name: 'Framer',
+    level: '60%',
+    Icon: BsCircleFill
+  },  
+  {
+    name: 'Canva',
+    level: '60%',
+    Icon: BsCircleFill
+  },
+];
