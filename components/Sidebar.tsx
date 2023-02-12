@@ -60,8 +60,14 @@ export const Sidebar = () => {
           <GoLocation />
           <span>Brasília, Brazil</span>
         </div>
-        <p className="my-2" >renatofm6694@gmail.com</p>
-        <p className="my-2">+55 (61) 98224-8071</p>
+        <p className="my-2" >contact@renatofm.dev</p>
+
+        <a href="" className="hover:text-green">
+        <p className="my-2">+55 (61) 9 8224-8071</p>
+        </a>
+        
+
+
       </div>
       {/* Email button */}
       <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
