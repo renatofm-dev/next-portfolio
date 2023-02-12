@@ -1,4 +1,16 @@
-import React from 'react'
+import { Category } from '@/types'
+import React, { FunctionComponent } from 'react'
+
+
+export const NavItem:FunctionComponent<{
+  value: Category
+}> = () => {
+  return (
+    <li>
+
+    </li>
+  )
+}
 
 const ProjectsNavbar = () => {
   return (
