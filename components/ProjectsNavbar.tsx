@@ -3,25 +3,35 @@ import React, { FunctionComponent } from 'react'
 
 
 export const NavItem:FunctionComponent<{
-  value: Category | "all"
-}> = ({value}) => {
+  value: Category | "all";
+   handlerFillterCategory:Function;
+   active:string;
+}> = ({
+  value,
+  handlerFillterCategory, 
+  active
+}) => {
+
+  let className = 'capitalize cursor-pointer hover:text-green';
+  if (active === value) className += " text-green";
+
   return (
-    <li className='capitalize cursor-pointer hover:text-green'>
+    <li className={className} onClick={()=> handlerFillterCategory(value)}>
       {value}
     </li>
   )
 }
 
-const ProjectsNavbar = () => {
+const ProjectsNavbar:FunctionComponent<{handlerFillterCategory:Function, active:string}> = (props) => {
   return (
     <div className='flex px-3 py-2 space-x-3 overflow-x-auto list-none'>
-      <NavItem value='all'/>
-      <NavItem value='React'/>
-      <NavItem value='React Native'/>
-      <NavItem value='Express'/>
-      <NavItem value='Node'/>
-      <NavItem value='Vanilla'/>
-      <NavItem value='Vue'/>
+      <NavItem value='all'{...props}/>
+      <NavItem value='React'{...props}/>
+      <NavItem value='React Native'{...props}/>
+      <NavItem value='Express'{...props}/>
+      <NavItem value='Node'{...props}/>
+      <NavItem value='Vanilla'{...props}/>
+      <NavItem value='Vue'{...props}/>
     </div>
   )
 }
