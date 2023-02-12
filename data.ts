@@ -104,7 +104,7 @@ export const projects:IProject[] = [
   {
     name:"Project 01",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/alurabooks.png",
+    image_path:"/images/alurabooks.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["Vanilla"],
     github_url: "https://github.com/rmartins94/My-Blog",
@@ -114,7 +114,7 @@ export const projects:IProject[] = [
   {
     name:"Project 02",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/hsb-landingpage.png",
+    image_path:"/images/hsb-landingpage.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["React",],
     github_url: "https://github.com/rmartins94/My-Blog",
@@ -124,7 +124,7 @@ export const projects:IProject[] = [
   {
     name:"Project 03",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/HSBlog.png",
+    image_path:"/images/HSBlog.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["React", "Node", "Express"],
     github_url: "https://github.com/rmartins94/My-Blog",
@@ -134,7 +134,7 @@ export const projects:IProject[] = [
   {
     name:"Project 04",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/javascript-voice-recognition.png",
+    image_path:"/images/javascript-voice-recognition.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["Vanilla"],
     github_url: "https://github.com/rmartins94/My-Blog",
@@ -144,7 +144,7 @@ export const projects:IProject[] = [
   {
     name:"Project 05",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/mochila-de-viagem.png",
+    image_path:"/images/mochila-de-viagem.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["Vanilla"],
     github_url: "https://github.com/rmartins94/My-Blog",
@@ -154,7 +154,7 @@ export const projects:IProject[] = [
   {
     name:"Project 06",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image_path:"../images/nlw-setup-2023.png",
+    image_path:"/images/nlw-setup-2023.png",
     deploy_url: "https://github.com/rmartins94/My-Blog",
     category: ["React", "Node", "React Native", "Express"],
     github_url: "https://github.com/rmartins94/My-Blog",

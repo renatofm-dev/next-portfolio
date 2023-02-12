@@ -9,11 +9,11 @@ module.exports = {
         protocol: 'https',
         hostname: 'github.com',
         port: '',
-        pathname: '/rmartins94/**',
+        pathname: 'renatofm94/**',
       },
     ],
   },
-},
+}
 module.exports = nextConfig
 
 

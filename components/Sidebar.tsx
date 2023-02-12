@@ -3,10 +3,13 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
+import Image from 'next/legacy/image';
 
 export const Sidebar = () => {
 
   const {theme, setTheme} = useTheme();
+
+  const userAvatar = '/profile-avatar.png';
 
   const changeTheme= ()=> {
     setTheme(theme === "light" ? "dark" : "light");
@@ -14,12 +17,15 @@ export const Sidebar = () => {
 
   return (
     <div>
-      <img
-        src="https://github.com/rmartins94.png"
+
+      <Image
+        src={userAvatar}
         alt="user avatar"
-        className="w-32 h-32 mx-auto rounded-full"
-      // width={50}
-      // height={50}
+        className="mx-auto rounded-full "
+        width="128"
+        height="128"
+        layout="intrinsic"
+        quality="100"
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
