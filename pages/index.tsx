@@ -1,12 +1,20 @@
-import { fadeInUp, routeAnimate, stagger } from "@/animations"
-import { services } from "../data"
-import ServiceCard from "@/components/ServiceCard"
-import {motion} from "framer-motion"
+import { fadeInUp, routeAnimate, stagger } from "@/animations";
+import { services } from "../data";
+import ServiceCard from "@/components/ServiceCard";
+import {motion} from "framer-motion";
+import { GetServerSideProps, GetServerSidePropsContext, NextPage } from "next";
 
-const index = () => {
+import Head from "next/head";
+
+const index: NextPage = (endpoint) => {
+  console.log(endpoint)
 
   return (
     <motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routeAnimate} initial="initial" animate="animate" exit="exit">
+      <Head>
+        <title>Renato Martins | Portfolio</title>
+      </Head>
+
       <h6 className="my-3 font-medium">
         Chemical engineering student with 1+ years of frontend dev experience using React, Vue.js & Next.js.
         Skilled in HTML, CSS, JS & user-centered design.
@@ -40,19 +48,19 @@ const index = () => {
 
 export default index
 
-// export const getServerSideProps = async (context:GetServerSidePropsContext) => {
+export const getServerSideProps: GetServerSideProps = async (context:GetServerSidePropsContext) => {
   
-//   const res  = await fetch('http://localhost:3000/api/services')
-//   const data = await res.json()
-//   console.log('SERVER', services)
+  // const res  = await fetch(`${process.env.VERCEL_URL}/api/services`)
+  // const data = await res.json()
+  // console.log(process.env.VERCEL_URL)
 
-//   return {
-//     props: {
-//       services: data.services,
-//     }
-//   }
+  return {
+    props: {
+      endpoint: process.env.VERCEL_URL
+    }
+  }
 
-// }
+}
 
 // export const getStaticProps = async (context:GetStaticPropsContext) => {
   

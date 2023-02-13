@@ -3,6 +3,7 @@ import { languages, tools } from '@/data';
 import React from 'react';
 import {motion} from 'framer-motion';
 import { fadeInUp, routeAnimate } from '@/animations';
+import Head from 'next/head';
 
 const resume = () => {
 
@@ -10,6 +11,9 @@ const resume = () => {
 
   return (
     <motion.div className='px-6 py-2' variants={routeAnimate} initial="initial" animate="animate" exit="exit">
+      <Head>
+        <title>Renato Martins | Resume</title>
+      </Head>
       {/* education and exp. */}
       <div className="grid gap-6 md:grid-cols-2">
         <motion.div 

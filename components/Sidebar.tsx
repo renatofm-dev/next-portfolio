@@ -44,13 +44,22 @@ export const Sidebar = () => {
       {/* Social icons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
         <a href="">
-          <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
+          <AiFillLinkedin 
+            className="w-8 h-8 cursor-pointer" 
+            aria-label="LinkedIn"
+          />
         </a>
         <a href="">
-          <AiFillInstagram className="w-8 h-8 cursor-pointer" />
+          <AiFillInstagram 
+            className="w-8 h-8 cursor-pointer" 
+            aria-label="Instagram"
+          />
         </a>
         <a href="">
-          <AiFillGithub className="w-8 h-8 cursor-pointer" />
+          <AiFillGithub 
+            className="w-8 h-8 cursor-pointer" 
+            aria-label="Github"
+          />
         </a>
       </div>
       {/* address */}
