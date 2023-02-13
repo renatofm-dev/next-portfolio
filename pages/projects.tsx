@@ -4,7 +4,7 @@ import { projects as projectsData } from '@/data'
 import { Category } from '@/types'
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
-import {stagger, fadeInUp} from '@/animations'
+import {stagger, fadeInUp, routeAnimate} from '@/animations'
 
  const Projects = () => {
   const [projects, setProjects] = useState(projectsData)
@@ -25,7 +25,7 @@ import {stagger, fadeInUp} from '@/animations'
   };
 
   return (
-    <div className='px-5 py-2 overflow-y-scroll' style={{height:'65vh'}}>
+    <motion.div className='px-5 py-2 overflow-y-scroll' style={{height:'65vh'}} variants={routeAnimate} initial="initial" animate="animate" exit="exit">
        
        <ProjectsNavbar handlerFillterCategory={handlerFillterCategory} active={active}/>
        
@@ -49,7 +49,7 @@ import {stagger, fadeInUp} from '@/animations'
         }
       </motion.div>
 
-    </div>
+    </motion.div>
   )
 }
 

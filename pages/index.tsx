@@ -1,4 +1,4 @@
-import { fadeInUp, stagger } from "@/animations"
+import { fadeInUp, routeAnimate, stagger } from "@/animations"
 import { services } from "../data"
 import ServiceCard from "@/components/ServiceCard"
 import {motion} from "framer-motion"
@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 const index = () => {
 
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1">
+    <motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routeAnimate} initial="initial" animate="animate" exit="exit">
       <h6 className="my-3 font-medium">
         Chemical engineering student with 1+ years of frontend dev experience using React, Vue.js & Next.js.
         Skilled in HTML, CSS, JS & user-centered design.
@@ -34,7 +34,7 @@ const index = () => {
             ))}
           </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

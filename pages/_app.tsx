@@ -1,12 +1,14 @@
 
-import { Navbar } from '@/components/Navbar'
-import { Sidebar } from '@/components/Sidebar'
+import { Navbar } from '@/components/Navbar';
+import { Sidebar } from '@/components/Sidebar';
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
 
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
 
-export default function App({ Component, pageProps }: AppProps) {
+import { AnimatePresence } from 'framer-motion';
+
+export default function App({ Component, pageProps, router }: AppProps) {
   return (
 
     <ThemeProvider attribute='class'>
@@ -25,7 +27,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
           <Navbar />
 
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route}/>
+          </AnimatePresence>
 
         </div>
 
