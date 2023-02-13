@@ -102,6 +102,8 @@ export const tools:ISkill[] = [
 
 export const projects:IProject[] = [
   {
+    id:1,
+    
     name:"Project 01",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/alurabooks.png",
@@ -112,6 +114,8 @@ export const projects:IProject[] = [
 
   },
   {
+    id:2,
+
     name:"Project 02",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/hsb-landingpage.png",
@@ -122,6 +126,8 @@ export const projects:IProject[] = [
 
   },
   {
+    id:3,
+
     name:"Project 03",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/HSBlog.png",
@@ -132,6 +138,8 @@ export const projects:IProject[] = [
 
   },
   {
+    id:4,
+
     name:"Project 04",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/javascript-voice-recognition.png",
@@ -142,6 +150,8 @@ export const projects:IProject[] = [
 
   },
   {
+    id:5,
+
     name:"Project 05",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/mochila-de-viagem.png",
@@ -152,6 +162,8 @@ export const projects:IProject[] = [
 
   },
   {
+    id:6,
+
     name:"Project 06",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image_path:"/images/nlw-setup-2023.png",

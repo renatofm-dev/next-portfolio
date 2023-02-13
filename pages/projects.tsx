@@ -10,6 +10,8 @@ import {stagger, fadeInUp, routeAnimate} from '@/animations'
   const [projects, setProjects] = useState(projectsData)
   const [active, setActive] = useState("all")
 
+  const [showDetail, setShowDetail] = useState<number | null>(null);
+
   const handlerFillterCategory = (category: Category | "all") => {
     if(category === "all") {
       setProjects(projectsData);
@@ -43,7 +45,11 @@ import {stagger, fadeInUp, routeAnimate} from '@/animations'
             variants={fadeInUp} 
             key={project.name}
           >
-            <ProjectCard project={project}/>
+            <ProjectCard 
+              project={project} 
+              showDetail={showDetail} 
+              setShowDetail={setShowDetail}
+            />
           </motion.div>
         ))
         }

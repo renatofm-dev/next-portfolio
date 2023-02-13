@@ -9,6 +9,8 @@ import { fadeInUp, stagger } from '@/animations';
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
+  showDetail:null | number;
+  setShowDetail:(id:null|number)=> void;
 }> = ({
   project: {
     name,
@@ -18,17 +20,20 @@ const ProjectCard: FunctionComponent<{
     github_url,
     description,
     key_techs,
-  }
+    id,
+  },
+  showDetail,
+  setShowDetail,
 }) => {
 
-    const [showDetail, setShowDetail] = useState(false);
+    
     return (
       <div>
         <Image
           src={image_path}
           alt={`image of project ${name}`}
           className='cursor-pointer'
-          onClick={() => setShowDetail(true)}
+          onClick={() => setShowDetail(id)}
           width="300"
           height="150"
           layout='responsive'
@@ -44,12 +49,12 @@ const ProjectCard: FunctionComponent<{
 
 
         {
-          showDetail &&
-          <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100'>
+          showDetail === id &&
+          <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100'>
 
             <motion.div variants={stagger} initial="initial" animate="animate">
 
-              <motion.div variants={fadeInUp}>
+              <motion.div variants={fadeInUp} className='border-4 border-gray-50'>
                 <Image
                   src={image_path}
                   alt={`image of project ${name}`}
@@ -90,7 +95,7 @@ const ProjectCard: FunctionComponent<{
               </motion.div>
             </motion.div>
 
-            <button onClick={() => setShowDetail(false)}
+            <button onClick={() => setShowDetail(null)}
               className='absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200'
             >
               <MdClose size={30} />
