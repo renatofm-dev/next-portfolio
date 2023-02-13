@@ -1,34 +1,38 @@
+import { fadeInUp, stagger } from "@/animations"
 import { services } from "../data"
-// import { GetServerSidePropsContext, GetStaticPropsContext } from "next"
-// import { IService } from "../types"
 import ServiceCard from "@/components/ServiceCard"
+import {motion} from "framer-motion"
 
 const index = () => {
 
   return (
     <div className="flex flex-col flex-grow px-6 pt-1">
-      <h5 className="my-3 font-medium">
+      <h6 className="my-3 font-medium">
         Chemical engineering student with 1+ years of frontend dev experience using React, Vue.js & Next.js.
         Skilled in HTML, CSS, JS & user-centered design.
         Passionate about staying up-to-date with industry trends 
         & delivering high-quality solutions. Committed to innovation & impact."
-      </h5>
+      </h6>
       <div 
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100" 
         style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
-          <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
+          <h4 className="my-3 text-xl font-bold tracking-wide">What I Offer</h4>
 
-            <div className="grid gap-6 lg:grid-cols-2">
+          <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
           {
             services.map((service) => (
 
-              <div key={service.title} className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1">
+              <motion.div
+                key={service.title} 
+                className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+                variants={fadeInUp}
+
+              >
                 <ServiceCard  service={service}/>
-              </div>
+              </motion.div>
 
             ))}
-            </div>
-
+          </motion.div>
       </div>
     </div>
   )
