@@ -183,4 +183,15 @@ export const projects:IProject[] = [
     github_url: "https://github.com/rmartins94/Weather-App",
     key_techs: ["Vue",],
   },
+  {
+    id:8,
+
+    name:"Weight Tracker App",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image_path:"/images/weight-tracker-app.png",
+    deploy_url: "https://weight-tracker-ochre.vercel.app/",
+    category: ["Vue",],
+    github_url: "https://github.com/rmartins94/Weight-Tracker",
+    key_techs: ["Vue",],
+  },
 ]
