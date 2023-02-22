@@ -43,7 +43,7 @@ export const Sidebar = () => {
       </a>
       {/* Social icons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
-        <a href="">
+        <a href="https://www.linkedin.com/in/renato-martins-a16531127/">
           <AiFillLinkedin 
             className="w-8 h-8 cursor-pointer" 
             aria-label="LinkedIn"
