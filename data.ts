@@ -104,37 +104,37 @@ export const projects:IProject[] = [
   {
     id:1,
     
-    name:"Project 01",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name:"AluraBooks - Mobile First",
+    description: " website desenvolvido com vanilla (HTML, CSS, JS), com o foco no método de mobile first. O metodo consiste no desenvovimento a partir do layout mobile. ",
     image_path:"/images/alurabooks.png",
-    deploy_url: "https://github.com/rmartins94/My-Blog",
+    deploy_url: "https://mobile-first-alurabooks.vercel.app/",
     category: ["Vanilla"],
-    github_url: "https://github.com/rmartins94/My-Blog",
-    key_techs: ["React", "Node", "React Native"],
+    github_url: "https://github.com/rmartins94/mobile-first-alurabooks",
+    key_techs: ["Vanilla"],
 
   },
   {
     id:2,
 
-    name:"Project 02",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name:"Landing Page HSB",
+    description: "Landing Page desenvolvida para a empresa Holding System Brazil. Foi desenvolvido com React, styled components, Framer Motion. Foram utilizadas API's como Google Maps, Email js entre outras.",
     image_path:"/images/hsb-landingpage.png",
-    deploy_url: "https://github.com/rmartins94/My-Blog",
-    category: ["React",],
-    github_url: "https://github.com/rmartins94/My-Blog",
-    key_techs: ["React", "Node", "React Native"],
+    deploy_url: "https://holdingsystem.com.br/",
+    category: ["React","Framer Motion",],
+    github_url: "https://github.com/rmartins94/HSB-LandingPage",
+    key_techs: ["React", "Framer Motion"],
 
   },
   {
     id:3,
 
-    name:"Project 03",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name:"HSBlog",
+    description: "Blog desenvolvido para a empresa Holding System Brazil. Foi desenvolvido com o framework NextJS com typescript, Tailwind CSS. Foi utilizado a API da sanity como plataforma CMS.",
     image_path:"/images/HSBlog.png",
-    deploy_url: "https://github.com/rmartins94/My-Blog",
-    category: ["React", "Node", "Express"],
+    deploy_url: "https://hs-blog.vercel.app/",
+    category: ["React", "Node", "Next"],
     github_url: "https://github.com/rmartins94/My-Blog",
-    key_techs: ["React", "Node", "React Native"],
+    key_techs: ["React", "Next"],
 
   },
   {
@@ -171,5 +171,16 @@ export const projects:IProject[] = [
     category: ["React", "Node", "React Native", "Express"],
     github_url: "https://github.com/rmartins94/My-Blog",
     key_techs: ["React", "Node", "React Native"],
+  },
+  {
+    id:7,
+
+    name:"Weather App",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image_path:"/images/weather-app.png",
+    deploy_url: "https://weather-app-rho-ruddy.vercel.app/",
+    category: ["Vue",],
+    github_url: "https://github.com/rmartins94/Weather-App",
+    key_techs: ["Vue",],
   },
 ]

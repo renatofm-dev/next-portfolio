@@ -23,4 +23,4 @@ export interface IProject {
   key_techs: string[],
 }
 
-export type Category = "React" | "Vue" | "Express" | "Node" | "Vanilla" | "React Native" 
+export type Category = "React" | "Vue" | "Express" | "Node" | "Vanilla" | "React Native" | "Framer Motion" | "Next"
