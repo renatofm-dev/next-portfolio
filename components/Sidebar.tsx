@@ -49,13 +49,13 @@ export const Sidebar = () => {
             aria-label="LinkedIn"
           />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/renatofm94/">
           <AiFillInstagram 
             className="w-8 h-8 cursor-pointer" 
             aria-label="Instagram"
           />
         </a>
-        <a href="">
+        <a href="https://github.com/rmartins94">
           <AiFillGithub 
             className="w-8 h-8 cursor-pointer" 
             aria-label="Github"
