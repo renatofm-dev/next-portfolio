@@ -100,7 +100,6 @@ const ProjectCard: FunctionComponent<{
             >
               <MdClose size={30} />
             </button>
-
           </div>
         }
       </div>
