@@ -29,10 +29,10 @@ export const Sidebar = () => {
       />
 
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="text-green">Renato </span>
+        <span className="text-redplanet-100">Renato </span>
          Martins
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Web Developer</p>
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200">Desenvolvedor Web & Gestor de Tráfego</p>
       <a
         href=""
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200"
@@ -42,7 +42,7 @@ export const Sidebar = () => {
         Download Resume
       </a>
       {/* Social icons */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-redplanet-100 md:w-full">
         <a href="https://www.linkedin.com/in/renato-martins-a16531127/">
           <AiFillLinkedin 
             className="w-8 h-8 cursor-pointer" 
@@ -69,24 +69,24 @@ export const Sidebar = () => {
           <GoLocation />
           <span>Brasília, Brazil</span>
         </div>
-        <p className="my-2" >contact@renatofm.dev</p>
+        <p className="my-2" >contato@renatofm.dev</p>
 
-        <a href="" className="hover:text-green">
-        <p className="my-2">+55 (61) 9 8224-8071</p>
+        <a href="" className="hover:text-redplanet-100">
+        <p className="my-2">+55 (61) 9 8197-5991</p>
         </a>
         
 
 
       </div>
       {/* Email button */}
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none"
+      <button className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-redplanet-400 focus:outline-none"
         onClick={() => window.open('mailto: renatofm6694@gmail.com')}
       >
         Email
       </button>
       <button 
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400">
+        className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-redplanet-400">
         Theme
       </button>
     </div>
