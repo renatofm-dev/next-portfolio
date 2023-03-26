@@ -16,15 +16,13 @@ const index: NextPage = (endpoint) => {
       </Head>
 
       <h6 className="my-3 font-medium">
-        Chemical engineering student with 1+ years of frontend dev experience using React, Vue.js & Next.js.
-        Skilled in HTML, CSS, JS & user-centered design.
-        Passionate about staying up-to-date with industry trends 
-        & delivering high-quality solutions. Committed to innovation & impact."
+        Academico de Engenharia Química com mais de 1 ano de experiência em desenvolvimento Frontend utizando react e todo seu ecosistema.
+        Possuo vasta experiencia com gestão de tráfego 
       </h6>
       <div 
         className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100" 
         style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
-          <h4 className="my-3 text-xl font-bold tracking-wide">What I Offer</h4>
+          <h4 className="my-3 text-xl font-bold tracking-wide">O que eu ofereço</h4>
 
           <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
           {
