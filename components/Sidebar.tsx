@@ -79,14 +79,14 @@ export const Sidebar = () => {
 
       </div>
       {/* Email button */}
-      <button className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-redplanet-400 focus:outline-none"
+      <button className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-asiacolor-400 focus:outline-none"
         onClick={() => window.open('mailto: renatofm6694@gmail.com')}
       >
         Email
       </button>
       <button 
         onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-redplanet-400">
+        className="w-8/12 px-5 py-2 my-2 font-semibold text-white rounded-full bg-gradient-to-r from-redplanet-100 to-asiacolor-400">
         Theme
       </button>
     </div>
