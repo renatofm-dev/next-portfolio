@@ -46,19 +46,19 @@ const index: NextPage = (endpoint) => {
 
 export default index
 
-export const getServerSideProps: GetServerSideProps = async (context:GetServerSidePropsContext) => {
+// export const getServerSideProps: GetServerSideProps = async (context:GetServerSidePropsContext) => {
   
-  // const res  = await fetch(`${process.env.VERCEL_URL}/api/services`)
-  // const data = await res.json()
-  // console.log(process.env.VERCEL_URL)
+//   // const res  = await fetch(`${process.env.VERCEL_URL}/api/services`)
+//   // const data = await res.json()
+//   // console.log(process.env.VERCEL_URL)
 
-  return {
-    props: {
-      endpoint: process.env.VERCEL_URL
-    }
-  }
+//   return {
+//     props: {
+//       endpoint: process.env.VERCEL_URL
+//     }
+//   }
 
-}
+// }
 
 // export const getStaticProps = async (context:GetStaticPropsContext) => {
   
@@ -73,3 +73,4 @@ export const getServerSideProps: GetServerSideProps = async (context:GetServerSi
 //   }
 
 // }
+
